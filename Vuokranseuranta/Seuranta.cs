@@ -17,7 +17,7 @@ namespace Vuokranseuranta
     public partial class Seuranta : Form
     {
         string polku = Environment.CurrentDirectory;
-
+        /*
         public Seuranta()
         {
             Thread t = new Thread(new ThreadStart(SplashStart));
@@ -33,7 +33,7 @@ namespace Vuokranseuranta
         {
             Application.Run(new Etu());
         }
-
+        */
         private void Seuranta_Load(object sender, EventArgs e)
         {               
             StreamReader sr = new StreamReader(polku + @"\Data\companies.txt", Encoding.UTF8);
@@ -161,6 +161,12 @@ namespace Vuokranseuranta
         private void tietoaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MessageBox.Show("VUOSE Vuokranseuranta v. 1.0\n\nTekijät Olli Kaukola");
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            RentLayout lisaaminen = new RentLayout();
+            DialogResult result = lisaaminen.ShowDialog();
         }
 
     }

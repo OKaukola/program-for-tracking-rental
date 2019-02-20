@@ -339,9 +339,6 @@
 		<col def="S0">ISDotNetInstallerArgsCommit</col>
 		<col def="S0">ISDotNetInstallerArgsUninstall</col>
 		<col def="S0">ISDotNetInstallerArgsRollback</col>
-		<row><td>ISX_DEFAULTCOMPONENT</td><td>{E2CAE154-5D60-4548-A886-E29D7BBACA73}</td><td>DATA</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
-		<row><td>ISX_DEFAULTCOMPONENT1</td><td>{7BE2843F-8F97-49EF-880B-E85BF6EC444A}</td><td>COMPANIES</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
-		<row><td>ISX_DEFAULTCOMPONENT2</td><td>{6B8EFECA-501A-4B35-8EEB-DF609DEF68B8}</td><td>BASICINFORMATION</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 		<row><td>Vuokranseuranta.Primary_output</td><td>{DB81E3E6-B366-4FA4-A4C6-05B06B8C82FB}</td><td>OK</td><td>2</td><td/><td>vuokranseuranta.primary_outp</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 	</table>
 
@@ -1051,12 +1048,6 @@
 	<table name="CreateFolder">
 		<col key="yes" def="s72">Directory_</col>
 		<col key="yes" def="s72">Component_</col>
-		<row><td>BASICINFORMATION</td><td>ISX_DEFAULTCOMPONENT2</td></row>
-		<row><td>COMPANIES</td><td>ISX_DEFAULTCOMPONENT1</td></row>
-		<row><td>DATA</td><td>ISX_DEFAULTCOMPONENT</td></row>
-		<row><td>INSTALLDIR</td><td>ISX_DEFAULTCOMPONENT</td></row>
-		<row><td>INSTALLDIR</td><td>ISX_DEFAULTCOMPONENT1</td></row>
-		<row><td>INSTALLDIR</td><td>ISX_DEFAULTCOMPONENT2</td></row>
 		<row><td>INSTALLDIR</td><td>Vuokranseuranta.Primary_output</td></row>
 		<row><td>OK</td><td>Vuokranseuranta.Primary_output</td></row>
 	</table>
@@ -1140,12 +1131,9 @@
 		<row><td>ALLUSERSPROFILE</td><td>TARGETDIR</td><td>.:ALLUSE~1|All Users</td><td/><td>0</td><td/></row>
 		<row><td>AdminToolsFolder</td><td>TARGETDIR</td><td>.:Admint~1|AdminTools</td><td/><td>0</td><td/></row>
 		<row><td>AppDataFolder</td><td>TARGETDIR</td><td>.:APPLIC~1|Application Data</td><td/><td>0</td><td/></row>
-		<row><td>BASICINFORMATION</td><td>COMPANIES</td><td>BASICI~1|BasicInformation</td><td/><td>0</td><td/></row>
-		<row><td>COMPANIES</td><td>DATA</td><td>COMPAN~1|Companies</td><td/><td>0</td><td/></row>
 		<row><td>CommonAppDataFolder</td><td>TARGETDIR</td><td>.:Common~1|CommonAppData</td><td/><td>0</td><td/></row>
 		<row><td>CommonFiles64Folder</td><td>TARGETDIR</td><td>.:Common64</td><td/><td>0</td><td/></row>
 		<row><td>CommonFilesFolder</td><td>TARGETDIR</td><td>.:Common</td><td/><td>0</td><td/></row>
-		<row><td>DATA</td><td>OK</td><td>Data</td><td/><td>0</td><td/></row>
 		<row><td>DATABASEDIR</td><td>ISYourDataBaseDir</td><td>.</td><td/><td>0</td><td/></row>
 		<row><td>DesktopFolder</td><td>TARGETDIR</td><td>.:Desktop</td><td/><td>3</td><td/></row>
 		<row><td>FavoritesFolder</td><td>TARGETDIR</td><td>.:FAVORI~1|Favorites</td><td/><td>0</td><td/></row>
@@ -1872,9 +1860,6 @@
 	<table name="FeatureComponents">
 		<col key="yes" def="s38">Feature_</col>
 		<col key="yes" def="s72">Component_</col>
-		<row><td>AlwaysInstall</td><td>ISX_DEFAULTCOMPONENT</td></row>
-		<row><td>AlwaysInstall</td><td>ISX_DEFAULTCOMPONENT1</td></row>
-		<row><td>AlwaysInstall</td><td>ISX_DEFAULTCOMPONENT2</td></row>
 		<row><td>AlwaysInstall</td><td>Vuokranseuranta.Primary_output</td></row>
 	</table>
 
@@ -1890,14 +1875,6 @@
 		<col def="S255">ISBuildSourcePath</col>
 		<col def="I4">ISAttributes</col>
 		<col def="S72">ISComponentSubFolder_</col>
-		<row><td>_016.txt</td><td>ISX_DEFAULTCOMPONENT2</td><td>2016.txt</td><td>0</td><td/><td/><td/><td>1</td><td>D:\Vuokranseuranta\Vuokranseuranta\Data\Companies\BasicInformation\2016.txt</td><td>1</td><td/></row>
-		<row><td>_017.txt</td><td>ISX_DEFAULTCOMPONENT2</td><td>2017.txt</td><td>0</td><td/><td/><td/><td>1</td><td>D:\Vuokranseuranta\Vuokranseuranta\Data\Companies\BasicInformation\2017.txt</td><td>1</td><td/></row>
-		<row><td>_018.txt</td><td>ISX_DEFAULTCOMPONENT2</td><td>2018.txt</td><td>0</td><td/><td/><td/><td>1</td><td>D:\Vuokranseuranta\Vuokranseuranta\Data\Companies\BasicInformation\2018.txt</td><td>1</td><td/></row>
-		<row><td>_019.txt</td><td>ISX_DEFAULTCOMPONENT2</td><td>2019.txt</td><td>0</td><td/><td/><td/><td>1</td><td>D:\Vuokranseuranta\Vuokranseuranta\Data\Companies\BasicInformation\2019.txt</td><td>1</td><td/></row>
-		<row><td>_020.txt</td><td>ISX_DEFAULTCOMPONENT2</td><td>2020.txt</td><td>0</td><td/><td/><td/><td>1</td><td>D:\Vuokranseuranta\Vuokranseuranta\Data\Companies\BasicInformation\2020.txt</td><td>1</td><td/></row>
-		<row><td>_021.txt</td><td>ISX_DEFAULTCOMPONENT2</td><td>2021.txt</td><td>0</td><td/><td/><td/><td>1</td><td>D:\Vuokranseuranta\Vuokranseuranta\Data\Companies\BasicInformation\2021.txt</td><td>1</td><td/></row>
-		<row><td>_023.txt</td><td>ISX_DEFAULTCOMPONENT2</td><td>2023.txt</td><td>0</td><td/><td/><td/><td>1</td><td>D:\Vuokranseuranta\Vuokranseuranta\Data\Companies\BasicInformation\2023.txt</td><td>1</td><td/></row>
-		<row><td>companies.txt</td><td>ISX_DEFAULTCOMPONENT</td><td>COMPAN~1.TXT|companies.txt</td><td>0</td><td/><td/><td/><td>1</td><td>D:\Vuokranseuranta\Vuokranseuranta\Data\companies.txt</td><td>1</td><td/></row>
 		<row><td>vuokranseuranta.primary_outp</td><td>Vuokranseuranta.Primary_output</td><td>Vuokranseuranta.Primary output</td><td>0</td><td/><td/><td/><td>1</td><td>&lt;Vuokranseuranta&gt;|Built</td><td>3</td><td/></row>
 	</table>
 
@@ -2040,9 +2017,6 @@
 		<col def="S0">FTPLocation</col>
 		<col def="S0">HTTPLocation</col>
 		<col def="S0">Miscellaneous</col>
-		<row><td>ISX_DEFAULTCOMPONENT</td><td/><td/><td>_02CE3482_D527_4EAC_9B77_0ACF19FAB486_FILTER</td><td/><td/><td/><td/></row>
-		<row><td>ISX_DEFAULTCOMPONENT1</td><td/><td/><td>_851976E1_1E13_420A_855C_37D5792CEA56_FILTER</td><td/><td/><td/><td/></row>
-		<row><td>ISX_DEFAULTCOMPONENT2</td><td/><td/><td>_8270925A_8839_44BB_B746_C4FE7489CD97_FILTER</td><td/><td/><td/><td/></row>
 		<row><td>Vuokranseuranta.Primary_output</td><td/><td/><td>_B3DAF88F_4696_4874_A30F_6B712030A59F_FILTER</td><td/><td/><td/><td/></row>
 	</table>
 
@@ -2632,7 +2606,7 @@
 		<col def="I2">Encoded</col>
 		<col def="S0">Comment</col>
 		<col def="I4">TimeStamp</col>
-		<row><td>COMPANY_NAME</td><td>1033</td><td>OK</td><td>0</td><td/><td>749122262</td></row>
+		<row><td>COMPANY_NAME</td><td>1033</td><td>OK</td><td>0</td><td/><td>-1859660655</td></row>
 		<row><td>DN_AlwaysInstall</td><td>1033</td><td>Always Install</td><td>0</td><td/><td>749120214</td></row>
 		<row><td>IDPROP_EXPRESS_LAUNCH_CONDITION_COLOR</td><td>1033</td><td>The color settings of your system are not adequate for running [ProductName].</td><td>0</td><td/><td>749120214</td></row>
 		<row><td>IDPROP_EXPRESS_LAUNCH_CONDITION_OS</td><td>1033</td><td>The operating system is not adequate for running [ProductName].</td><td>0</td><td/><td>749120214</td></row>
@@ -3732,8 +3706,8 @@
 		<row><td>IDS__TargetReq_DESC_PROCESSOR</td><td>1033</td><td>The processor is not adequate for running [ProductName].</td><td>0</td><td/><td>749120214</td></row>
 		<row><td>IDS__TargetReq_DESC_RAM</td><td>1033</td><td>The amount of RAM is not adequate for running [ProductName].</td><td>0</td><td/><td>749120214</td></row>
 		<row><td>IDS__TargetReq_DESC_RESOLUTION</td><td>1033</td><td>The screen resolution is not adequate for running [ProductName].</td><td>0</td><td/><td>749120214</td></row>
-		<row><td>ID_STRING1</td><td>1033</td><td>http://www.OK.com</td><td>0</td><td/><td>749122262</td></row>
-		<row><td>ID_STRING2</td><td>1033</td><td>OK</td><td>0</td><td/><td>749122262</td></row>
+		<row><td>ID_STRING1</td><td>1033</td><td>http://www.OK.com</td><td>0</td><td/><td>-1859660655</td></row>
+		<row><td>ID_STRING2</td><td>1033</td><td>OK</td><td>0</td><td/><td>-1859660655</td></row>
 		<row><td>IIDS_UITEXT_FeatureUninstalled</td><td>1033</td><td>This feature will remain uninstalled.</td><td>0</td><td/><td>749120214</td></row>
 	</table>
 

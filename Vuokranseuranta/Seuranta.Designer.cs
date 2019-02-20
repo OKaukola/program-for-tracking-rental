@@ -52,6 +52,7 @@
             this.labelYhtio = new System.Windows.Forms.Label();
             this.btnAvaa = new System.Windows.Forms.Button();
             this.btnTallenna = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -256,11 +257,22 @@
             this.btnTallenna.UseVisualStyleBackColor = true;
             this.btnTallenna.Click += new System.EventHandler(this.btnTallenna_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(519, 38);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Seuranta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(655, 496);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnTallenna);
             this.Controls.Add(this.btnAvaa);
             this.Controls.Add(this.labelYhtio);
@@ -314,5 +326,6 @@
         private System.Windows.Forms.ToolStripMenuItem tietoaToolStripMenuItem;
         private System.Windows.Forms.DataGridViewTextBoxColumn yearDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn roomidDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Button button1;
     }
 }

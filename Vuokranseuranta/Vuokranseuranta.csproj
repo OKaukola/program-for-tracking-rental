@@ -11,6 +11,21 @@
     <AssemblyName>Vuokranseuranta</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -32,13 +47,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Newtonsoft.Json.8.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Windows.Controls.Ribbon" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -49,11 +61,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ApartLayout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApartLayout.Designer.cs">
+      <DependentUpon>ApartLayout.cs</DependentUpon>
+    </Compile>
     <Compile Include="AsLisaaminen.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="AsLisaaminen.Designer.cs">
       <DependentUpon>AsLisaaminen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CondominiumLayout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CondominiumLayout.Designer.cs">
+      <DependentUpon>CondominiumLayout.cs</DependentUpon>
     </Compile>
     <Compile Include="Etu.cs">
       <SubType>Form</SubType>
@@ -80,6 +104,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="RentLayout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RentLayout.Designer.cs">
+      <DependentUpon>RentLayout.cs</DependentUpon>
+    </Compile>
     <Compile Include="Seuranta.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,8 +117,19 @@
       <DependentUpon>Seuranta.cs</DependentUpon>
     </Compile>
     <Compile Include="Vuokra.cs" />
+    <Compile Include="vuose_dbDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>vuose_dbDataSet.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ApartLayout.resx">
+      <DependentUpon>ApartLayout.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AsLisaaminen.resx">
       <DependentUpon>AsLisaaminen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CondominiumLayout.resx">
+      <DependentUpon>CondominiumLayout.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Etu.resx">
       <DependentUpon>Etu.cs</DependentUpon>
@@ -104,6 +145,9 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="RentLayout.resx">
+      <DependentUpon>RentLayout.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Seuranta.resx">
       <DependentUpon>Seuranta.cs</DependentUpon>
     </EmbeddedResource>
@@ -117,11 +161,38 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="vuose_dbDataSet.xsc">
+      <DependentUpon>vuose_dbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="vuose_dbDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>vuose_dbDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="vuose_dbDataSet.xss">
+      <DependentUpon>vuose_dbDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
   <ItemGroup>
     <Content Include="Data\companies.txt" />
     <Content Include="Data\Companies\BasicInformation\2016.txt" />
@@ -131,6 +202,15 @@
     <Content Include="Data\Companies\BasicInformation\2020.txt" />
     <Content Include="Data\Companies\BasicInformation\2021.txt" />
     <Content Include="Data\Companies\BasicInformation\2023.txt" />
+    <None Include="Resources\vuose_logo.jpg" />
+    <None Include="Resources\vuose_start_screen.jpg" />
+    <Content Include="vuose_db.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="vuose_db_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>vuose_db.mdf</DependentUpon>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

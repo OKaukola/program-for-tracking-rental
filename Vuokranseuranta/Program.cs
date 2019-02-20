@@ -16,7 +16,7 @@ namespace Vuokranseuranta
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Seuranta());
+            Application.Run(new RentLayout());
         }
     }
 }

@@ -77,8 +77,6 @@ C:\Projects\program-for-tracking-rental\Vuokranseuranta\obj\Debug\Vuokranseurant
 C:\Projects\program-for-tracking-rental\Vuokranseuranta\obj\Debug\Vuokranseuranta.pdb
 C:\Projects\program-for-tracking-rental\Vuokranseuranta\bin\Debug\Vuokranseuranta.exe
 C:\Projects\program-for-tracking-rental\Vuokranseuranta\bin\Debug\Vuokranseuranta.pdb
-C:\Projects\program-for-tracking-rental\Vuokranseuranta\bin\Debug\Newtonsoft.Json.dll
-C:\Projects\program-for-tracking-rental\Vuokranseuranta\bin\Debug\Newtonsoft.Json.xml
 C:\Projects\program-for-tracking-rental\Vuokranseuranta\obj\Debug\Vuokranseuranta.csprojResolveAssemblyReference.cache
 C:\Projects\program-for-tracking-rental\Vuokranseuranta\obj\Debug\Vuokranseuranta.AsLisaaminen.resources
 C:\Projects\program-for-tracking-rental\Vuokranseuranta\obj\Debug\Vuokranseuranta.Etu.resources
@@ -87,3 +85,8 @@ C:\Projects\program-for-tracking-rental\Vuokranseuranta\obj\Debug\Vuokranseurant
 C:\Projects\program-for-tracking-rental\Vuokranseuranta\obj\Debug\Vuokranseuranta.Properties.Resources.resources
 C:\Projects\program-for-tracking-rental\Vuokranseuranta\obj\Debug\Vuokranseuranta.Seuranta.resources
 C:\Projects\program-for-tracking-rental\Vuokranseuranta\obj\Debug\Vuokranseuranta.csproj.GenerateResource.Cache
+C:\Projects\program-for-tracking-rental\Vuokranseuranta\obj\Debug\Vuokranseuranta.RentLayout.resources
+C:\Projects\program-for-tracking-rental\Vuokranseuranta\bin\Debug\vuose_db.mdf
+C:\Projects\program-for-tracking-rental\Vuokranseuranta\bin\Debug\vuose_db_log.ldf
+C:\Projects\program-for-tracking-rental\Vuokranseuranta\obj\Debug\Vuokranseuranta.ApartLayout.resources
+C:\Projects\program-for-tracking-rental\Vuokranseuranta\obj\Debug\Vuokranseuranta.CondominiumLayout.resources
