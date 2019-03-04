@@ -61,17 +61,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AboutLayout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutLayout.Designer.cs">
+      <DependentUpon>AboutLayout.cs</DependentUpon>
+    </Compile>
     <Compile Include="ApartLayout.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ApartLayout.Designer.cs">
       <DependentUpon>ApartLayout.cs</DependentUpon>
-    </Compile>
-    <Compile Include="AsLisaaminen.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AsLisaaminen.Designer.cs">
-      <DependentUpon>AsLisaaminen.cs</DependentUpon>
     </Compile>
     <Compile Include="CondominiumLayout.cs">
       <SubType>Form</SubType>
@@ -79,23 +79,23 @@
     <Compile Include="CondominiumLayout.Designer.cs">
       <DependentUpon>CondominiumLayout.cs</DependentUpon>
     </Compile>
-    <Compile Include="Etu.cs">
+    <Compile Include="EditLayout.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Etu.Designer.cs">
-      <DependentUpon>Etu.cs</DependentUpon>
+    <Compile Include="EditLayout.Designer.cs">
+      <DependentUpon>EditLayout.cs</DependentUpon>
     </Compile>
-    <Compile Include="LisaaMuokkaa.cs">
+    <Compile Include="LoadingLayout.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LisaaMuokkaa.Designer.cs">
-      <DependentUpon>LisaaMuokkaa.cs</DependentUpon>
+    <Compile Include="LoadingLayout.Designer.cs">
+      <DependentUpon>LoadingLayout.cs</DependentUpon>
     </Compile>
-    <Compile Include="Ohje.cs">
+    <Compile Include="HelpLayout.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Ohje.Designer.cs">
-      <DependentUpon>Ohje.cs</DependentUpon>
+    <Compile Include="HelpLayout.Designer.cs">
+      <DependentUpon>HelpLayout.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -110,11 +110,12 @@
     <Compile Include="RentLayout.Designer.cs">
       <DependentUpon>RentLayout.cs</DependentUpon>
     </Compile>
-    <Compile Include="Seuranta.cs">
+    <Compile Include="Tenant.cs" />
+    <Compile Include="TenantLayout.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Seuranta.Designer.cs">
-      <DependentUpon>Seuranta.cs</DependentUpon>
+    <Compile Include="TenantLayout.Designer.cs">
+      <DependentUpon>TenantLayout.cs</DependentUpon>
     </Compile>
     <Compile Include="Vuokra.cs" />
     <Compile Include="vuose_dbDataSet.Designer.cs">
@@ -122,34 +123,58 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>vuose_dbDataSet.xsd</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AboutLayout.en-US.resx">
+      <DependentUpon>AboutLayout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AboutLayout.resx">
+      <DependentUpon>AboutLayout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ApartLayout.en-US.resx">
+      <DependentUpon>ApartLayout.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ApartLayout.resx">
       <DependentUpon>ApartLayout.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AsLisaaminen.resx">
-      <DependentUpon>AsLisaaminen.cs</DependentUpon>
+    <EmbeddedResource Include="CondominiumLayout.en-US.resx">
+      <DependentUpon>CondominiumLayout.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CondominiumLayout.resx">
       <DependentUpon>CondominiumLayout.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Etu.resx">
-      <DependentUpon>Etu.cs</DependentUpon>
+    <EmbeddedResource Include="EditLayout.en-US.resx">
+      <DependentUpon>EditLayout.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LisaaMuokkaa.resx">
-      <DependentUpon>LisaaMuokkaa.cs</DependentUpon>
+    <EmbeddedResource Include="EditLayout.resx">
+      <DependentUpon>EditLayout.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Ohje.resx">
-      <DependentUpon>Ohje.cs</DependentUpon>
+    <EmbeddedResource Include="LoadingLayout.en-US.resx">
+      <DependentUpon>LoadingLayout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoadingLayout.resx">
+      <DependentUpon>LoadingLayout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HelpLayout.en-US.resx">
+      <DependentUpon>HelpLayout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HelpLayout.resx">
+      <DependentUpon>HelpLayout.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="RentLayout.en-US.resx">
+      <DependentUpon>RentLayout.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="RentLayout.resx">
       <DependentUpon>RentLayout.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Seuranta.resx">
-      <DependentUpon>Seuranta.cs</DependentUpon>
+    <EmbeddedResource Include="TenantLayout.en-US.resx">
+      <DependentUpon>TenantLayout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TenantLayout.resx">
+      <DependentUpon>TenantLayout.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -194,16 +219,9 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Data\companies.txt" />
-    <Content Include="Data\Companies\BasicInformation\2016.txt" />
-    <Content Include="Data\Companies\BasicInformation\2017.txt" />
-    <Content Include="Data\Companies\BasicInformation\2018.txt" />
-    <Content Include="Data\Companies\BasicInformation\2019.txt" />
-    <Content Include="Data\Companies\BasicInformation\2020.txt" />
-    <Content Include="Data\Companies\BasicInformation\2021.txt" />
-    <Content Include="Data\Companies\BasicInformation\2023.txt" />
     <None Include="Resources\vuose_logo.jpg" />
     <None Include="Resources\vuose_start_screen.jpg" />
+    <None Include="Resources\vuose_icon.ico" />
     <Content Include="vuose_db.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

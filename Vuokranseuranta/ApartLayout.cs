@@ -39,7 +39,6 @@ namespace Vuokranseuranta
             dataReader.Close();
             command.Dispose();
             con.Close();
- 
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -83,7 +82,6 @@ namespace Vuokranseuranta
                 con.Close();
 
                 // Closes the parent form.
-
                 this.Close();
             }
         }
@@ -110,7 +108,6 @@ namespace Vuokranseuranta
             dataReader.Close();
             command.Dispose();
             con.Close();
-
         }
 
         private void button2_Click(object sender, EventArgs e)

@@ -14,16 +14,16 @@ namespace Vuokranseuranta
     public partial class CondominiumLayout : Form
     {
         SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Projects\program-for-tracking-rental\Vuokranseuranta\vuose_db.mdf;Integrated Security=True;Connect Timeout=30");
+        SqlCommand command;
+        SqlDataReader dataReader;
+        String sql = "";
         int cid;
-        
+
         public CondominiumLayout()
         {
             InitializeComponent();
 
             con.Open();
-            SqlCommand command;
-            SqlDataReader dataReader;
-            String sql = "";
 
             sql = "SELECT COUNT(cid) from Condominium";
             command = new SqlCommand(sql, con);
@@ -50,8 +50,6 @@ namespace Vuokranseuranta
             if (result == System.Windows.Forms.DialogResult.Yes)
             {
                 con.Open();
-                SqlCommand command;
-                String sql = "";
 
                 sql = "INSERT INTO Condominium (Cid,name,address,city,postalcode) VALUES (@a1,@a2,@a3,@a4,@a5)";
                 command = new SqlCommand(sql, con);
