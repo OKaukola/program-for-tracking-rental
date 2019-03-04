@@ -4,7 +4,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Runtime.Serialization;
-using Newtonsoft.Json;
 using System.IO;
 
 
@@ -18,6 +17,9 @@ namespace Vuokranseuranta
         [DataMember]
         public string Vuokrasumma { get; set; }
         [DataMember]
+        public DateTime Vuokrapvm { get; set; }
+        /*
+        [DataMember]
         public string Vuokrapvm { get; set; }
         [DataMember]
         public string Vastike { get; set; }
@@ -25,29 +27,28 @@ namespace Vuokranseuranta
         public string Vastikepvm { get; set; }
         [DataMember]
         public string Muistiinp { get; set; }
+        */
 
         public Vuokra()
         {
 
         }
 
-        public Vuokra(string kuukausi,string vuokrasumma,string vuokrapvm, string vastike, string vastikepvm,string muistiinp)
+        public Vuokra(string kuukausi, string vuokrasumma, DateTime vuokrapvm)//,string vuokrapvm, string vastike, string vastikepvm,string muistiinp)
         {
             Kuukausi = kuukausi;
             Vuokrasumma = vuokrasumma;
             Vuokrapvm = vuokrapvm;
+            /*
             Vastike = vastike;
             Vastikepvm = vastikepvm;
             Muistiinp = muistiinp;
+            */
         }
 
         public override string ToString()
         {
-            return Kuukausi + " " + Vuokrasumma + " " + Vuokrapvm + " " + Vastike + " " + Vastikepvm + " " + Muistiinp;
+            return Kuukausi + " " + Vuokrasumma + " " + Vuokrapvm;// + " " + Vastike + " " + Vastikepvm + " " + Muistiinp;
         }
-
-
-
-
     }
 }
